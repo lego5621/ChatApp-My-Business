@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>Тест ChatApp</title>
+		<!-- <link href="./icomoon/styles.min.css" rel="stylesheet" type="text/css" /> -->
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://cabinet.chatapp.online/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="https://cabinet.chatapp.online/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="https://cabinet.chatapp.online/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="mask-icon"
+			href="https://cabinet.chatapp.online/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/icons/fontawesome/styles.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/bootstrap.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/bootstrap_limitless.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/layout.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/components.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/colors.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/all.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://cabinet.chatapp.online/css/custom.css?v=3"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cabinet.chatapp.online/js/main/jquery.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/main/bootstrap.bundle.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/loaders/blockui.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/visualization/d3/d3.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/visualization/d3/d3_tooltip.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/forms/styling/uniform.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/forms/styling/switchery.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/forms/styling/switch.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/ui/moment/moment.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/pickers/daterangepicker.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/notifications/pnotify.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/notifications/sweet_alert.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/plugins/forms/selects/select2.min.js"></script>
+		<script src="https://cabinet.chatapp.online/js/app.js"></script>
+		<script src="https://cabinet.chatapp.online/js/main.js"></script>
+		<script src="https://cabinet.chatapp.online/js/demo_pages/form_select2.js"></script>
+		<script src="https://cabinet.chatapp.online/js/demo_pages/dashboard.js"></script>
+		<script src="https://cabinet.chatapp.online/js/demo_pages/form_multiselect.js"></script>
+		<script src="https://cabinet.chatapp.online/js/demo_pages/extra_pnotify.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.3.1/dist/js/shepherd.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/shepherd.js@8.3.1/dist/css/shepherd.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+			integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cabinet.chatapp.online/css/top_navbar.css"
+		/>
+
+		<!-- <script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				corePlugins: {
+					preflight: false,
+				},
+			};
+		</script> -->
+	</head>
+	<body>
+		<div class="navbar navbar-expand-md navbar-dark">
+			<div
+				class="navbar-brand"
+				style="padding-top: 10px !important; padding-bottom: 10px !important"
+			>
+				<a href="/" class="d-inline-block">
+					<img
+						src="https://cabinet.chatapp.online/img/top_logo.png?v=1650270004"
+						alt=""
+						style="height: 50px !important"
+					/>
+				</a>
+			</div>
+			<div class="d-md-none">
+				<button
+					class="navbar-toggler d-none-770-max"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbar-mobile"
+				>
+					<i class="icon-tree5"></i>
+				</button>
+				<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+					<i class="icon-paragraph-justify3"></i>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-mobile">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a
+							href="#"
+							class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-lg-block"
+						>
+							<i class="icon-transmission"></i>
+						</a>
+					</li>
+				</ul>
+				<span class="badge ml-md-3 mr-md-auto"> </span>
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown dropdown-user">
+						<a
+							href="#"
+							class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+							data-toggle="dropdown"
+						>
+							<img
+								src="https://eu.ui-avatars.com/api/?name=oooooo lllllll&amp;background=5ad066&amp;color=ffff"
+								class="rounded-circle mr-2"
+								height="34"
+								alt=""
+							/>
+							<span>oooooo lllllll</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<form
+								id="logout_form"
+								method="POST"
+								action="https://cabinet.chatapp.online/logout"
+							>
+								<input
+									type="hidden"
+									name="_token"
+									value="voHCc04ALV2iUtmkGIDeX0GMkGiGSAQBTGIJNQas"
+								/>
+							</form>
+							<a href="/member/6558/profile" class="dropdown-item"
+								><i class="icon-profile"></i> Профиль</a
+							>
+							<a
+								href="https://cabinet.chatapp.online/my-balance"
+								class="dropdown-item"
+								><i class="icon-coins"></i> Баланс</a
+							>
+							<a
+								href="#"
+								onclick="event.preventDefault();$('#logout_form').submit();"
+								class="dropdown-item"
+								><i class="icon-switch2"></i> Выйти</a
+							>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							href="https://cabinet.chatapp.online/my-balance"
+							class="navbar-nav-link caret-0"
+						>
+							<i class="icon-wallet"></i>
+							<span class="ml-2">0.00 ₽</span>
+						</a>
+					</li>
+
+					<li class="nav-item dropdown mr-2">
+						<button
+							type="button"
+							class="btn btn-sm btn-success"
+							data-toggle="modal"
+							data-target="#modal_fill_balance"
+							style="margin-top: 10px"
+						>
+							<i class="fas fa-money-bill-alt mr-2"></i>
+							Пополнить
+						</button>
+					</li>
+
+					<div class="dropdown nav-item" style="margin-top: 10px">
+						<button class="dropbtn btn btn-sm btn-light">RU</button>
+						<div class="dropdown-content">
+							<a class="btn btn-sm btn-light" href="/lang/en"> EN</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="page-content">
+			<link
+				rel="stylesheet"
+				href="https://cabinet.chatapp.online/css/sidebar.css"
+			/>
+
+			<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+				<div class="sidebar-mobile-toggler text-center">
+					<a href="#" class="sidebar-mobile-main-toggle">
+						<i class="icon-arrow-left8"></i>
+					</a>
+					Навигация
+					<a href="#" class="sidebar-mobile-expand">
+						<i class="icon-screen-full"></i>
+						<i class="icon-screen-normal"></i>
+					</a>
+				</div>
+				<div class="sidebar-content">
+					<div class="sidebar-user">
+						<div class="card-body pb-0">
+							<div class="sidebarButtons">
+								<button
+									onclick="location.href = 'https://cabinet.chatapp.online/newLicenses/myLicenses'"
+									type="button"
+									class="btn sidebar-btn my-license w-100"
+								>
+									Каналы [Лицензии]
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="card card-sidebar-mobile flex-grow-1 mt-4">
+						<ul class="nav nav-sidebar flex-grow-1" data-nav-type="accordion">
+							<li class="nav-item-header">
+								<div class="text-uppercase font-size-xs line-height-xs">
+									Главное
+								</div>
+								<i class="icon-menu" title="Главное"></i>
+							</li>
+							<li
+								class="nav-item flex-grow-1 d-flex flex-column justify-content-between"
+							>
+								<div class="nav-item">
+									<a
+										href="https://cabinet.chatapp.online/newPayments/myPayments"
+										class="nav-link"
+									>
+										<i class="icon-store"></i>
+										<span>Мои платежи</span>
+									</a>
+									<a
+										href="https://cabinet.chatapp.online/msbot/myBotList"
+										class="nav-link"
+									>
+										<i class="icon-atom"></i>
+										<span>Бот</span>
+										<span
+											class="badge sidebar-badge badge-info align-self-center ml-auto"
+											>Beta</span
+										>
+									</a>
+									<a
+										href="https://cabinet.chatapp.online/distribution/list"
+										class="nav-link"
+									>
+										<i class="icon-mailbox"></i>
+										<span>Рассылки</span>
+										<span
+											class="badge sidebar-badge badge-info align-self-center ml-auto"
+											>Update</span
+										>
+									</a>
+									<a
+										href="https://cabinet.chatapp.online/telegramParser/list"
+										class="nav-link"
+									>
+										<i class="icon-list-unordered"></i>
+										<span>Telegram парсер</span>
+									</a>
+									<a
+										href="https://cabinet.chatapp.online/integration"
+										class="nav-link"
+									>
+										<i class="icon-git-merge"></i>
+										<span>Разработчикам</span>
+									</a>
+									<a
+										href="https://cabinet.chatapp.online/quick-response"
+										class="nav-link"
+									>
+										<i class="icon-feed"></i>
+										<span>Быстрые ответы</span>
+										<span
+											class="badge sidebar-badge badge-info align-self-center ml-auto"
+											>Beta</span
+										>
+									</a>
+								</div>
+								<div>
+									<div class="sidebar-section-header"></div>
+									<a
+										target="_blank"
+										href="https://chatapp.online/ru/contacts/"
+										class="nav-link"
+									>
+										<i class="fa-solid fa-life-ring"></i>
+										<span>Техподдержка</span>
+									</a>
+									<a
+										href="https://chatapp.online/ru/help/"
+										target="_blank"
+										class="nav-link"
+									>
+										<i class="fa-solid fa-book-atlas"></i>
+										<span>База знаний</span>
+									</a>
+									<a
+										href="https://t.me/app24_online"
+										target="_blank"
+										class="nav-link"
+									>
+										<i class="fa-brands fa-telegram"></i>
+										<span>Телеграм канал о новинках</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<div class="page-header page-header-light d-flex">
+					<div class="page-header-content header-elements-md-inline">
+						<div class="page-title d-flex">
+							<h4><span class="page-header-title">Список лицензий</span></h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- Контенет -->
+
+				<div class="content flex-grow-1 d-flex">
+					<div id="app" class="my-business flex-grow-1 d-flex"></div>
+				</div>
+
+				<!-- Футер -->
+				<link
+					rel="stylesheet"
+					href="https://cabinet.chatapp.online/css/pagesFooter.css"
+				/>
+				<div
+					class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top"
+				>
+					<div class="navbar-collapse collapse" id="navbar-footer">
+						<div class="d-flex">
+							<div class="mr-1 d-flex align-items-center footer-text">
+								Следите за нами:
+							</div>
+							<div class="mr-1">
+								<a target="_blank" href="https://t.me/app24_online">
+									<svg
+										width="34"
+										height="34"
+										viewBox="0 0 34 34"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17 0C7.61109 0 0 7.61109 0 17C0 26.3889 7.61109 34 17 34C26.3889 34 34 26.3889 34 17C34 7.61109 26.3889 0 17 0Z"
+											fill="#40B3E0"
+										/>
+										<path
+											d="M25.272 9.77898L22.2355 25.0881C22.2355 25.0881 21.8109 26.1499 20.6431 25.6402L13.6361 20.2682L11.0883 19.0368L6.79923 17.5929C6.79923 17.5929 6.14101 17.3594 6.07726 16.8498C6.01351 16.3402 6.82048 16.0642 6.82048 16.0642L23.8704 9.37577C23.8704 9.37577 25.2719 8.76005 25.2719 9.77925"
+											fill="white"
+										/>
+										<path
+											d="M13.0977 24.916C13.0977 24.916 12.8932 24.8969 12.6382 24.0899C12.3836 23.2831 11.0883 19.0365 11.0883 19.0365L21.3863 12.4969C21.3863 12.4969 21.9809 12.1359 21.9596 12.4969C21.9596 12.4969 22.0657 12.5606 21.7471 12.8578C21.4288 13.1552 13.6575 20.1407 13.6575 20.1407"
+											fill="#D2E5F1"
+										/>
+										<path
+											d="M16.3228 22.3278L13.5514 24.8547C13.5514 24.8547 13.3347 25.0191 13.0977 24.916L13.6284 20.2224"
+											fill="#B5CFE4"
+										/>
+									</svg>
+								</a>
+							</div>
+							<div>
+								<a target="_blank" href="https://vk.com/chatapp.online">
+									<svg
+										width="34"
+										height="34"
+										viewBox="0 0 34 34"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M17 0.68C7.98659 0.68 0.679993 7.9866 0.679993 17C0.679993 26.0134 7.98659 33.32 17 33.32C26.0134 33.32 33.32 26.0134 33.32 17C33.32 7.9866 26.0134 0.68 17 0.68ZM23.2764 19.0927C23.2764 19.0927 24.7197 20.5173 25.075 21.1786C25.0852 21.1922 25.0903 21.2058 25.0937 21.2126C25.2382 21.4557 25.2722 21.6444 25.2008 21.7855C25.0818 22.0201 24.6738 22.1357 24.5344 22.1459H21.9844C21.8076 22.1459 21.437 22.1 20.9882 21.7906C20.6431 21.5492 20.3031 21.1531 19.9716 20.7672C19.4769 20.1926 19.0485 19.6962 18.6167 19.6962C18.5618 19.6961 18.5073 19.7047 18.4552 19.7217C18.1288 19.8271 17.7106 20.2929 17.7106 21.5339C17.7106 21.9215 17.4046 22.1442 17.1887 22.1442H16.0208C15.623 22.1442 13.5507 22.0048 11.7147 20.0685C9.46729 17.697 7.44429 12.9404 7.42729 12.8962C7.29979 12.5885 7.56329 12.4236 7.85059 12.4236H10.4261C10.7695 12.4236 10.8817 12.6327 10.9599 12.818C11.0517 13.0339 11.3883 13.8924 11.9408 14.858C12.8367 16.4322 13.3858 17.0714 13.8261 17.0714C13.9087 17.0704 13.9897 17.0494 14.0624 17.0102C14.637 16.6906 14.5299 14.6421 14.5044 14.2171C14.5044 14.1372 14.5027 13.3008 14.2086 12.8996C13.9978 12.6089 13.6391 12.4984 13.4215 12.4576C13.5096 12.3361 13.6256 12.2375 13.7598 12.1703C14.1542 11.9731 14.8648 11.9442 15.5703 11.9442H15.963C16.728 11.9544 16.9252 12.0037 17.2023 12.0734C17.7633 12.2077 17.7752 12.5698 17.7259 13.8091C17.7106 14.161 17.6953 14.5588 17.6953 15.028C17.6953 15.13 17.6902 15.2388 17.6902 15.3544C17.6732 15.9851 17.6528 16.7008 18.0982 16.9949C18.1563 17.0313 18.2234 17.0508 18.292 17.051C18.4467 17.051 18.9125 17.051 20.1739 14.8869C20.5629 14.1903 20.901 13.4665 21.1854 12.7211C21.2109 12.6769 21.2857 12.5409 21.3741 12.4882C21.4393 12.4549 21.5117 12.438 21.5849 12.4389H24.6126C24.9424 12.4389 25.1685 12.4882 25.211 12.6157C25.2858 12.818 25.1974 13.4351 23.8153 15.3068L23.1982 16.1211C21.9453 17.7633 21.9453 17.8466 23.2764 19.0927Z"
+											fill="#2196F3"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item">
+								<a
+									href="https://play.google.com/store/apps/details?id=chatapp.online&utm_source=chatapp.online&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+									class="navbar-nav-link"
+									target="_blank"
+								>
+									<img src="https://chatapp.online/img/en_play_market.svg" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
