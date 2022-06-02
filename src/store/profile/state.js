@@ -11,43 +11,43 @@ export const useProfileStore = defineStore('profile', {
 
 	actions: {
 		async getProfileData() {
-			let url = 'https://dev2cabinet.chatapp.online/member/profile/data';
-			let response = await fetch(url);
-			let profileData = await response.json();
-			this.name = profileData.user.name;
-			this.id = profileData.user.id;
-			this.email = profileData.user.email;
-			this.profilePhotoUrl = profileData.user.profile_photo_url;
-			this.notifications = profileData.notifications;
+			// let url = 'https://dev2cabinet.chatapp.online/member/profile/data';
+			// let response = await fetch(url);
+			// let profileData = await response.json();
+			// this.name = profileData.user.name;
+			// this.id = profileData.user.id;
+			// this.email = profileData.user.email;
+			// this.profilePhotoUrl = profileData.user.profile_photo_url;
+			// this.notifications = profileData.notifications;
 
-			// this.name = 'Эргашев Алишер';
-			// this.id = 4570;
-			// this.email = 'alisher@social.uz';
-			// this.profilePhotoUrl =
-			// 	'https://eu.ui-avatars.com/api/?name=Эргашев Алишер&background=5ad066&color=ffff';
+			this.name = 'Эргашев Алишер';
+			this.id = 4570;
+			this.email = 'alisher@social.uz';
+			this.profilePhotoUrl =
+				'https://eu.ui-avatars.com/api/?name=Эргашев Алишер&background=5ad066&color=ffff';
 
-			// this.notifications = [
-			// 	{
-			// 		title: 'Scan QR',
-			// 		code: 'qr',
-			// 		check: false,
-			// 	},
-			// 	{
-			// 		title: 'Device error',
-			// 		code: 'error',
-			// 		check: false,
-			// 	},
-			// 	{
-			// 		title: 'The battery is discharged',
-			// 		code: 'notify_error',
-			// 		check: false,
-			// 	},
-			// 	{
-			// 		title: 'Balance [WABA]',
-			// 		code: 'waba_minimal_balance',
-			// 		check: true,
-			// 	},
-			// ];
+			this.notifications = [
+				{
+					title: 'Scan QR',
+					code: 'qr',
+					check: false,
+				},
+				{
+					title: 'Device error',
+					code: 'error',
+					check: false,
+				},
+				{
+					title: 'The battery is discharged',
+					code: 'notify_error',
+					check: false,
+				},
+				{
+					title: 'Balance [WABA]',
+					code: 'waba_minimal_balance',
+					check: true,
+				},
+			];
 		},
 
 		async chengeNotificStatus(notification) {

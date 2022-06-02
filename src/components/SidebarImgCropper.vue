@@ -30,6 +30,7 @@ let uploadImage = () => {
 			let response = await fetch('/profile/image/update', {
 				method: 'POST',
 				body: form,
+				headers: { 'Content-Type': 'multipart/form-data' },
 			});
 
 			if (response.ok) {
